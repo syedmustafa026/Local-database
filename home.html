@@ -2,76 +2,62 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background-color: #495250; margin-top: 100px;">
+<body style="background-color: #495250; ">
 
-    <div class="signup-form">
+    <div class="main1">
 
-
-        <h2>Sign Up</h2>
-        <p>Please fill in this form to create an account!</p>
-        <hr />
-        <div class="form-group">
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">
-                        <span class="fa fa-user-circle"></span>
-                    </span>
-                </div>
-                <input id="username" type="text" class="form-control" name="username" placeholder="Username"
-                    required="required" />
+        <nav class=" navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand"><img src="logo.png" width="150px" height="100px" alt="logo"></a>
+                <h1 id="h1"></h1>
+                <form class="d-flex">
+                    <button type="button" onclick="logOut()" class="btn btn-warning">LOGOUT</button>
+                    <!-- <button type="button" onclick="signup()" class="btn btn-success">Signup</button> -->
             </div>
-        </div>
-        <div class="form-group">
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">
-                        <i class="fa fa-envelope-o"></i>
-                    </span>
+        </nav>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div style="width: 100%; height: 550px; " class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="1.jpg" class="d-block w-100" alt="...">
                 </div>
-                <input id="email" type="email" class="form-control" name="email" placeholder="Email Address"
-                    required="required" />
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">
-                        <i class="fa fa-unlock-alt"></i>
-                    </span>
+                <div class="carousel-item">
+                    <img src="2.png" class="d-block w-100" alt="...">
                 </div>
-                <input id="password" type="password" class="form-control" name="password" placeholder="Password"
-                    required="required" />
+                <div class="carousel-item">
+                    <img src="3.png" class="d-block w-100" alt="...">
+                </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="form-group">
-            <label class="form-check-label"><input checked type="checkbox" required="required" /> I accept the
-                <a>Terms of Use</a> &amp;
-                <a>Privacy Policy</a></label>
-        </div>
-        <div class="form-group">
-            <button onkeypress="add()" onclick="stor()" class="log btn btn-primary btn-lg">Sign Up</button>
-        </div>
-
-
     </div>
-
-
-
-
-
-
+    <script>
+        
+        function logOut() {
+            location.href = "home.html"
+        }
+    </script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
