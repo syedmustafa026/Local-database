@@ -46,6 +46,7 @@ function stor() {
 
         var oldData = JSON.parse(localStorage.getItem('userName', 'pw', 'name'))
 
+        
         oldData.push(users)
         localStorage.setItem('userName', 'pw', 'name', JSON.stringify(oldData))
     }
@@ -86,8 +87,8 @@ function check() {
 
 var storeUser = localStorage.getItem('userName')
 var welcome = document.getElementById("h1")
-// console.log(welcome)
-// welcome.innerHTML = `WELCOME, ${storeUser} `
+
+
 
 function logOut() {
     window.location.href = "login.html"
