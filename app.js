@@ -19,7 +19,6 @@ function stor() {
         alert('Password And Username Min lenght will be 6');
 
 
-
     } else if (!pw.value.match(numbers)) {
         alert('The password should contain atleast a number ');
 
